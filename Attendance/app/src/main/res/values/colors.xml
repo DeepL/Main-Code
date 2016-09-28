@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#263238</color>
+    <color name="base">#263238</color>
+    <color name="error">#263238</color>
+    <color name="hint">#263238</color>
+    <color name="arrow">#263238</color>
+    <color name="floating_label">#263238</color>
+</resources>

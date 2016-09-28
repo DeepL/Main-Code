@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "81125606733",
+    "project_id": "attendance-447f4"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81125606733:android:e290a899106ab6fe",
+        "android_client_info": {
+          "package_name": "com.attendance.com.attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY5q8CdaT3W4IO5z_spWdmXkva8RXCzO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

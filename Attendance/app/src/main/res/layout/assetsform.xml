@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FAFAFA"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_black_36dp"
+        android:text="Add Assets"
+        android:background="@drawable/button_effect"
+        android:textColor="#FAFAFAFA"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/showForm"
+        android:layout_above="@+id/fab" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/showForm"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department:"
+                android:id="@+id/department"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                />
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/department_values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ms_multiline="false"
+                app:ms_hint="Select a department."
+                app:ms_enableFloatingLabel="false"
+                app:ms_enableErrorLabel="false"
+                app:ms_floatingLabelText="floating label"
+                app:ms_baseColor="@color/base"
+                app:ms_errorColor="@color/error"
+                app:ms_thickness="2dp"
+                app:ms_hintColor="@color/colorPrimary"
+                app:ms_arrowColor="@color/colorPrimary"
+                app:ms_arrowSize="13dp"
+                app:ms_alignLabels="false"
+                android:visibility="visible"
+                app:ms_floatingLabelColor="#FAFAFA"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_highlight_off_black_24dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/closeButton"
+            android:layout_gravity="right" />
+        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

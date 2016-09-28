@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:id="@+id/mobile_layout">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="An OTP has been sent to the above number, Please enter the OTP here"
+        android:id="@+id/otp_text"
+        android:layout_marginTop="130dp"
+        android:textColor="#263238"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#FAFAFA"
+
+        android:ems="10"
+        android:id="@+id/otp_verify"
+        android:maxLength="4"
+        android:hint="Enter the OTP"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:id="@+id/otp_button"
+        android:onClick="verifyOtp"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        android:textColor="#FAFAFA"
+        android:background="@drawable/button_effect"
+        android:layout_below="@+id/otp_verify"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/editborder"
+
+        android:singleLine="true"
+        android:id="@+id/mobile"
+        android:textSize="35sp"
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:textColor="#FAFAFA"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_toLeftOf="@+id/confirm"
+
+        android:layout_toStartOf="@+id/confirm" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNumber"
+        android:visibility="visible"
+        android:src="@drawable/edit"
+        android:layout_marginRight="20px"
+        android:background="@drawable/editborder"
+        android:layout_alignTop="@+id/mobile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/mobile" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/confirm_number"
+        android:layout_below="@+id/otp_verify"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginTop="38dp"
+/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:visibility="invisible"
+        android:src="@drawable/ic_done_black_24dp"
+        android:layout_marginRight="20px"
+        android:background="@drawable/editborder"
+        android:layout_alignTop="@+id/mobile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/mobile" />
+
+</RelativeLayout>

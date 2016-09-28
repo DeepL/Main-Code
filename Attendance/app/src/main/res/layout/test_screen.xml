@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome Back"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="#FAFAFA"
+            android:textSize="25sp"
+            android:background="#33000000"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="109dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance"
+            android:id="@+id/button2"
+            android:background="#33000000"
+            android:textColor="#FAFAFA"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventories"
+            android:id="@+id/button3"
+            android:background="#33000000"
+            android:textColor="#FAFAFA"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punch"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:id="@+id/button5"
+            android:background="#33000000"
+            android:textColor="#FAFAFA"
+
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_alignTop="@+id/button2"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:background="#33000000"
+            android:onClick="showDialog"
+            android:src="@drawable/ic_room_white_24dp"
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/button2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="200dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

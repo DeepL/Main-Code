@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/category_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms_multiline="false"
+        app:ms_hint="Select a category."
+        app:ms_enableFloatingLabel="false"
+        app:ms_enableErrorLabel="false"
+        app:ms_floatingLabelText="floating label"
+        app:ms_baseColor="@color/base"
+        app:ms_errorColor="@color/error"
+        app:ms_thickness="2dp"
+        app:ms_hintColor="@color/hint"
+        app:ms_arrowColor="@color/arrow"
+        app:ms_arrowSize="16dp"
+        app:ms_alignLabels="false"
+        app:ms_floatingLabelColor="@color/floating_label"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serial Number:"
+
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/serialLabel"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/serial_values"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/serial_values" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#FAFAFA"
+        android:visibility="invisible"
+        android:hint="Enter a serial number"
+        android:id="@+id/serial_values"
+
+        android:layout_toRightOf="@+id/serialLabel"
+        android:layout_toEndOf="@+id/serialLabel"
+        android:layout_below="@+id/category_values" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/serialLabel">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:id="@+id/name"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_value"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FAFAFA"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:id="@+id/description_inventory"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_value"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FAFAFA"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Value:"
+                android:id="@+id/value"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inventory_value"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FAFAFA"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase Date:"
+                android:id="@+id/purchase"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchase_value"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FAFAFA"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date:"
+                android:id="@+id/expiry"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expiry_value"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FAFAFA"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Inventory"
+            android:background="@drawable/button_effect"
+            android:id="@+id/submit"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FAFAFA"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

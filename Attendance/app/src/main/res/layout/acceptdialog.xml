@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#263238"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Are you sure you want to accept the inventory from "
+        android:id="@+id/textView2"
+        android:gravity="left" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree and accept the terms and coonditions."
+        android:id="@+id/checkBox"
+        android:layout_gravity="center"
+        android:onClick="showTerms"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:textColor="#FAFAFA"
+        android:id="@+id/button_send"
+        android:background="#263238"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

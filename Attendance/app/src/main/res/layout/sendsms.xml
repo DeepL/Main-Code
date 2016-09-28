@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#CFD8DC">
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:background="@drawable/button_effect"
+            android:textColor="#FFFFFF"
+            android:id="@+id/verifyId"
+            android:onClick="verifyId"
+            android:visibility="visible"
+            android:layout_below="@+id/emp_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emp_id"
+            android:maxLines="1"
+            android:gravity="center"
+            android:hint="Enter a employee id."
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:textColor="#FAFAFA"
+            android:layout_below="@+id/scroll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/scroll"
+            android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CFD8DC">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smsnumber"
+            android:layout_marginTop="68dp"
+            android:textSize="30sp"
+            android:text="Hello World"
+            android:textColor="#FAFAFA"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_data"
+            android:textSize="18sp"
+            android:hint="Enter message.."
+            android:inputType="text"
+            android:maxLines="1"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/send_message"
+            android:layout_toStartOf="@+id/send_message" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/send_message"
+            android:onClick="sendMessage"
+            android:background="@drawable/button_effect"
+            android:visibility="visible"
+            android:textColor="#FAFAFA"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView4"
+
+        android:layout_below="@+id/smsnumber"
+        android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
